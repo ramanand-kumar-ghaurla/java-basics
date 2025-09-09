@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
+
 public class Condition {
+    /**
+     * this is my main method of condition class
+     * @param args
+     */
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
@@ -21,6 +26,9 @@ public class Condition {
         }
 
         input.close();
+
+      
+        
     };
 
 }
