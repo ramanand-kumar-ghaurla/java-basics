@@ -1,12 +1,21 @@
 
 public class Book {
+    static int totalBooks;
+    
     String title;
     String author;
-    static int totalBooks = 2;
+
+    static {
+        totalBooks = 0;
+    }
+
+   
+   
 
     Book( String title,String author ){
         this.title = title;
         this.author = author;
+        totalBooks++;
         
     }
 
@@ -32,17 +41,17 @@ public class Book {
     public void returnBook(String title){
 
         System.out.println("Thanks for returning the book ");
-        Book.totalBooks++;
+        
     }
 
     public static void main(String[] args) {
-        System.out.println(Book.getTotalBooks());
+        
 
         Book javaBook = new Book("java bignner", "Robert");
 
 
       
-        javaBook.borrowBook("java biggner");
+       
          System.out.println(Book.getTotalBooks());
          javaBook.returnBook(" java biggener");
           System.out.println(Book.getTotalBooks());
